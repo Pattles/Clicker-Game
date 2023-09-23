@@ -2,6 +2,7 @@ import turtle
 import time
 import asyncio
 
+# Incomplete
 SHOP_ITEMS = {
     'item':'price',
     'sugar':100
@@ -18,6 +19,7 @@ cookie = turtle.Turtle()
 cookie.shape('Assets/cookie.gif')
 cookie.speed(0)
 
+# Incomplete
 window.register_shape(name='Assets/hamburger_menu.gif')
 menu = turtle.Turtle()
 menu.shape('Assets/hamburger_menu.gif')
@@ -38,15 +40,18 @@ def clicked(x, y):
     pen.clear()
     pen.write(f'Score: {score}', align='center', font=('Courier New', 32, 'bold'))
 
+# Incomplete
 def display_menu(x, y):
     pen.clear()
     cookie.hideturtle()
     menu.hideturtle()
     window.bgcolor(1, 0.7803921568627451, 0.34901960784313724)
 
-    
+
 
 cookie.onclick(clicked)
+
+# Incomplete
 menu.onclick(display_menu)
 
 
